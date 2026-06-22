@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>입질노트 | 채비법과 낚시 포인트</title>
+    <meta
+      name="description"
+      content="바다낚시, 민물낚시, 루어낚시 채비법과 계절별 낚시 포인트를 정리하는 낚시 정보 사이트"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="입질노트 홈">
+        <span class="brand-mark">IN</span>
+        <span>입질노트</span>
+      </a>
+      <nav class="main-nav" aria-label="주요 메뉴">
+        <a href="#rigs">채비법</a>
+        <a href="#spots">낚시 포인트</a>
+        <a href="#season">시즌 공략</a>
+        <a href="#ads">광고 문의</a>
+      </nav>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobileNav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <nav class="mobile-nav" id="mobileNav" aria-label="모바일 메뉴">
+      <a href="#rigs">채비법</a>
+      <a href="#spots">낚시 포인트</a>
+      <a href="#season">시즌 공략</a>
+      <a href="#ads">광고 문의</a>
+    </nav>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">채비부터 포인트까지 한 번에</p>
+          <h1>오늘 물때에 맞는 낚시 준비를 빠르게 끝내세요</h1>
+          <p>
+            입문자도 따라 하기 쉬운 채비법, 시즌별 대상어, 지역 포인트, 출조 전 체크리스트를
+            운영자 관점에서 정리하는 낚시 정보 허브입니다.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-action" href="#rigs">채비법 보기</a>
+            <a class="secondary-action" href="#spots">포인트 찾기</a>
+          </div>
+        </div>
+        <div class="hero-media" aria-label="새벽 낚시터 풍경 이미지"></div>
+      </section>
+
+      <section class="ad-strip" aria-label="상단 광고 영역">
+        <div>
+          <strong>광고 영역</strong>
+          <span>Google AdSense 상단 반응형 배너 또는 낚시용품 제휴 배너 자리</span>
+        </div>
+        <button type="button">광고 코드 위치</button>
+      </section>
+
+      <section class="content-shell">
+        <aside class="sidebar" aria-label="빠른 탐색">
+          <div class="search-box">
+            <label for="siteSearch">정보 검색</label>
+            <div class="search-row">
+              <input id="siteSearch" type="search" placeholder="예: 원투 채비, 감성돔, 한강" />
+              <button type="button" aria-label="검색">⌕</button>
+            </div>
+          </div>
+
+          <div class="side-panel">
+            <h2>인기 주제</h2>
+            <div class="tag-list">
+              <button type="button" data-filter="all">전체</button>
+              <button type="button" data-filter="바다">바다</button>
+              <button type="button" data-filter="민물">민물</button>
+              <button type="button" data-filter="루어">루어</button>
+              <button type="button" data-filter="초보">초보</button>
+            </div>
+          </div>
+
+          <div class="side-ad" id="ads">
+            <span>사이드 광고</span>
+            <strong>릴, 낚싯대, 미끼 쇼핑몰 배너</strong>
+            <p>제휴 링크나 지역 선상 예약 광고를 넣기 좋은 300x250 슬롯입니다.</p>
+          </div>
+        </aside>
+
+        <section class="article-area" aria-label="낚시 정보 글">
+          <div class="section-heading" id="rigs">
+            <p>Rig Guides</p>
+            <h2>채비법 가이드</h2>
+          </div>
+
+          <div class="article-grid">
+            <article class="article-card" data-tags="바다 초보">
+              <img src="./assets/float-rig.png" alt="찌낚시 채비 일러스트" />
+              <div>
+                <span class="category">바다 · 초보</span>
+                <h3>감성돔 반유동 찌낚시 기본 채비</h3>
+                <p>원줄, 반유동 매듭, 수중찌, 목줄 길이까지 첫 출조 전에 확인할 요소를 정리했습니다.</p>
+                <a href="#article">자세히 보기</a>
+              </div>
+            </article>
+
+            <article class="article-card" data-tags="루어 바다">
+              <img src="./assets/lure-rig.png" alt="루어낚시 채비 일러스트" />
+              <div>
+                <span class="category">루어 · 바다</span>
+                <h3>광어 다운샷 채비와 바닥 읽는 법</h3>
+                <p>봉돌 무게 선택, 웜 색상, 캐스팅 후 바닥 확인 루틴을 현장 중심으로 설명합니다.</p>
+                <a href="#article">자세히 보기</a>
+              </div>
+            </article>
+
+            <article class="article-card" data-tags="민물 초보">
+              <img src="./assets/carp-rig.png" alt="민물 원투 채비 일러스트" />
+              <div>
+                <span class="category">민물 · 초보</span>
+                <h3>붕어 원투 채비 입문 체크리스트</h3>
+                <p>대 편성, 바늘 호수, 떡밥 운용, 밤낚시 안전 준비까지 초보 기준으로 담았습니다.</p>
+                <a href="#article">자세히 보기</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="section-heading" id="spots">
+            <p>Spot Notes</p>
+            <h2>낚시 포인트</h2>
+          </div>
+
+          <div class="spot-list">
+            <article class="spot-row">
+              <div>
+                <span>서해 · 방파제</span>
+                <h3>태안권 생활낚시 포인트</h3>
+                <p>가족 출조, 주차, 화장실, 만조 전후 입질 시간을 중심으로 정리한 포인트 메모입니다.</p>
+              </div>
+              <button type="button">지도 보기</button>
+            </article>
+            <article class="spot-row">
+              <div>
+                <span>수도권 · 민물</span>
+                <h3>한강권 루어 워킹 코스</h3>
+                <p>퇴근 후 짧게 다녀오기 좋은 구간과 계절별 베이트피시 움직임을 함께 봅니다.</p>
+              </div>
+              <button type="button">지도 보기</button>
+            </article>
+            <article class="spot-row">
+              <div>
+                <span>남해 · 선상</span>
+                <h3>통영권 선상 예약 전 확인사항</h3>
+                <p>기상, 선비, 장비 대여, 대상어별 채비 준비물을 출조 전 체크리스트로 제공합니다.</p>
+              </div>
+              <button type="button">지도 보기</button>
+            </article>
+          </div>
+        </section>
+      </section>
+
+      <section class="season-section" id="season">
+        <div class="section-heading">
+          <p>Season Plan</p>
+          <h2>이번 시즌 추천 운영 콘텐츠</h2>
+        </div>
+        <div class="season-grid">
+          <div>
+            <strong>6월</strong>
+            <span>장마 전 무늬오징어, 광어, 붕어 밤낚시</span>
+          </div>
+          <div>
+            <strong>7월</strong>
+            <span>한치 선상, 계곡 피라미, 야간 방파제</span>
+          </div>
+          <div>
+            <strong>8월</strong>
+            <span>휴가철 생활낚시, 가족 포인트, 안전 수칙</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="monetize-section">
+        <div>
+          <p class="eyebrow">Monetization Layout</p>
+          <h2>광고를 넣기 쉬운 구조</h2>
+          <p>
+            상단 배너, 본문 중간 네이티브 광고, 사이드 300x250 광고, 하단 제휴 링크 영역을
+            분리해 두었습니다. 애드센스 심사 전에는 광고 안내 박스로 표시하고, 승인 후 코드만
+            교체하면 됩니다.
+          </p>
+        </div>
+        <div class="ad-layout-preview">
+          <span>상단 반응형</span>
+          <span>본문 중간</span>
+          <span>사이드 배너</span>
+          <span>하단 제휴</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>입질노트</strong>
+        <p>낚시 채비법, 포인트, 출조 준비 정보를 정리하는 운영형 콘텐츠 사이트.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#top">맨 위로</a>
+        <a href="mailto:ads@example.com">광고 문의</a>
+        <a href="#">개인정보처리방침</a>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
