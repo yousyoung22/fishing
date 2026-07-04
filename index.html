@@ -1,247 +1,205 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>피싱웨이브 | 낚시 포인트·채비법·조황·선상예약</title>
-    <meta name="description" content="낚시 채비법, 포인트 지도, 조황정보, 선상낚시 예약, 이벤트와 광고 문의까지 제공하는 프리미엄 낚시 정보 플랫폼" />
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="피싱웨이브 홈">
-        <span class="brand-mark">FW</span>
-        <span>피싱웨이브</span>
-      </a>
-      <nav class="desktop-nav" aria-label="주요 메뉴">
-        <a href="#rigs">채비법</a>
-        <a href="#spots">포인트</a>
-        <a href="#reports">조황정보</a>
-        <a href="#booking">선상예약</a>
-        <a href="#events">이벤트</a>
-        <a href="#contact">문의</a>
-      </nav>
-      <button class="menu-btn" type="button" aria-label="모바일 메뉴 열기">
-        <span></span><span></span>
-      </button>
-    </header>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEOUL ICE</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
 
-    <nav class="mobile-nav" aria-label="모바일 메뉴">
-      <a href="#rigs">채비법</a>
-      <a href="#spots">포인트</a>
-      <a href="#reports">조황정보</a>
-      <a href="#booking">선상예약</a>
-      <a href="#events">이벤트</a>
-      <a href="#contact">문의</a>
-    </nav>
+<body>
+<div class="top-strip">
+    <span>SEOUL ICE CUSTOM JEWELRY</span>
+    <span>1:1 ORDER AVAILABLE</span>
+    <span>BLACK LUXURY COLLECTION</span>
+</div>
 
-    <main id="top">
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">Premium Fishing Portal</p>
-          <h1>출조 전 필요한 모든 정보를 한 번에.</h1>
-          <p>
-            채비법, 포인트 지도, 조황정보, 선상낚시 예약, 이벤트, 광고 문의까지
-            실제 운영 가능한 낚시 정보 플랫폼 형태로 구성했습니다.
-          </p>
-          <div class="hero-actions">
-            <a class="btn primary" href="#spots">포인트 찾기</a>
-            <a class="btn secondary" href="#booking">선상 예약 보기</a>
-          </div>
+<header class="site-header">
+    <a class="logo" href="#home">
+        <img src="images/logo.png" alt="SEOUL ICE">
+        <span>SEOUL ICE</span>
+    </a>
+
+    <div class="right-area">
+        <nav id="nav-menu">
+            <a href="#products">JEWELRY</a>
+            <a href="#custom">CUSTOM</a>
+            <a href="#about">BRAND</a>
+            <a href="#services">SERVICES</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+
+        <button id="cart-btn" type="button">
+            BAG <span id="cart-count">0</span>
+        </button>
+    </div>
+
+    <button class="menu-toggle" type="button" onclick="toggleMenu()">☰</button>
+</header>
+
+<main>
+    <section id="home" class="hero">
+        <div class="hero-inner">
+            <img class="hero-logo" src="images/logo.png" alt="SEOUL ICE">
+            <p class="eyebrow">Custom iced jewelry</p>
+            <h1>SEOUL ICE</h1>
+            <p class="hero-text">
+                체인, 펜던트, 캐릭터 커스텀까지 블랙 럭셔리 무드로 완성한 주얼리 컬렉션.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#products" class="primary-btn">Shop Jewelry</a>
+                <a href="#custom" class="ghost-btn">Start Custom</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="category-band">
+        <a href="#products" data-filter-link="all">All Jewelry</a>
+        <a href="#products" data-filter-link="chain">Chains</a>
+        <a href="#products" data-filter-link="pendant">Pendants</a>
+        <a href="#products" data-filter-link="character">Characters</a>
+        <a href="#custom">Custom Order</a>
+    </section>
+
+    <section id="products" class="section product-section">
+        <div class="section-head">
+            <p class="eyebrow">Shop Seoul Ice</p>
+            <h2>Jewelry</h2>
+            <p class="sub">
+                기존 이미지와 상품명은 유지하면서, 쇼핑몰처럼 카테고리별로 보기 쉽게 구성했습니다.
+            </p>
         </div>
 
-        <div class="hero-panel">
-          <img src="./assets/hero-map.svg" alt="해안 낚시 포인트 지도와 출조 정보" />
-          <div class="live-chip top">실시간 조황 업데이트</div>
-          <div class="live-chip bottom">오늘 추천: 만조 전후 2시간</div>
+        <div id="filter-buttons" class="filter-buttons">
+            <button class="active" type="button" data-filter="all">All</button>
+            <button type="button" data-filter="chain">Chains</button>
+            <button type="button" data-filter="pendant">Pendants</button>
+            <button type="button" data-filter="character">Characters</button>
         </div>
-      </section>
 
-      <section class="ticker" aria-label="실시간 낚시 알림">
-        <strong>LIVE</strong>
-        <span>태안 방포항 우럭 입질 활발</span>
-        <span>통영 한치 선상 야간 예약 가능</span>
-        <span>반포대교 주변 해질녘 루어 추천</span>
-      </section>
+        <div id="product-grid"></div>
+    </section>
 
-      <section class="metric-grid">
-        <article><strong>128</strong><span>누적 포인트</span></article>
-        <article><strong>42</strong><span>채비 가이드</span></article>
-        <article><strong>18</strong><span>제휴 선사</span></article>
-        <article><strong>24H</strong><span>조황 업데이트</span></article>
-      </section>
+    <section id="custom" class="section custom-section">
+        <div class="custom-copy">
+            <p class="eyebrow">SEOUL ICE CUSTOM</p>
+            <h2>Begin a Custom Project</h2>
+            <p class="sub">
+                원하는 이미지, 이름, 컬러, 펜던트 디자인을 기준으로 커스텀 제작 상담을 진행할 수 있습니다.
+            </p>
+            <a href="#contact" class="primary-btn">문의하기</a>
+        </div>
 
-      <section class="ad-slot ad-top">
+        <div class="custom-preview">
+            <img src="images/3체인.jpg" alt="SEOUL ICE Custom Jewelry">
+        </div>
+    </section>
+
+    <section id="about" class="section brand-section">
+        <p class="eyebrow">Brand story</p>
+        <h2>Built for presence</h2>
+        <p class="sub">
+            SEOUL ICE는 단순히 반짝이는 액세서리가 아니라, 착용자의 분위기를 바꾸는 피스를 만듭니다.
+            어두운 배경 위에서 더 선명하게 살아나는 광택, 디테일한 세팅, 스트릿과 럭셔리 사이의 균형을 중심으로 제작합니다.
+        </p>
+    </section>
+
+    <section id="services" class="section service-section">
+        <div class="service-box">
+            <p class="eyebrow">Concierge</p>
+            <h2>1:1 Order</h2>
+            <p class="sub">커스텀 제작, 재고 확인, 사이즈 상담 가능</p>
+        </div>
+
+        <div class="service-box">
+            <p class="eyebrow">Payment</p>
+            <h2>Secure Payment</h2>
+            <p class="sub">카드 / 계좌이체 / 간편결제</p>
+        </div>
+
+        <div class="service-box">
+            <p class="eyebrow">Custom</p>
+            <h2>Design Request</h2>
+            <p class="sub">이미지 기반 커스텀 제작 상담</p>
+        </div>
+
+        <div id="contact" class="service-box">
+            <p class="eyebrow">Contact</p>
+            <h2>+82 01-7799-7273</h2>
+            <p class="sub">주문 및 상담 문의</p>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div>
+        <strong>SEOUL ICE</strong>
+        <p>Custom iced jewelry and black luxury pieces.</p>
+    </div>
+    <div>
+        <span>JEWELRY</span>
+        <span>CUSTOM</span>
+        <span>CONTACT</span>
+    </div>
+</footer>
+
+<aside id="cart-panel">
+    <div class="cart-header">
         <div>
-          <span>AD AREA</span>
-          <strong>상단 프리미엄 광고 영역</strong>
-          <p>Google AdSense, 낚시용품 쇼핑몰, 선상 예약 제휴 배너를 넣기 좋은 자리입니다.</p>
+            <p class="eyebrow">Selected pieces</p>
+            <h3>Shopping Bag</h3>
         </div>
-        <code>responsive-banner</code>
-      </section>
+        <button class="cart-close" type="button" onclick="closeCart()">×</button>
+    </div>
 
-      <section class="section" id="rigs">
-        <div class="section-head">
-          <p class="eyebrow">Rig Masterclass</p>
-          <h2>디테일 채비법</h2>
-          <p>초보자가 그대로 따라 할 수 있도록 원줄, 목줄, 봉돌, 바늘, 운용 포인트까지 정리했습니다.</p>
+    <div id="cart-items"></div>
+
+    <div class="cart-footer">
+        <div class="total-text">
+            <span>Total</span>
+            <strong id="total">₩0</strong>
         </div>
-        <div class="filter-tabs" data-filter-group="rigs">
-          <button class="active" data-filter="all" type="button">전체</button>
-          <button data-filter="바다" type="button">바다</button>
-          <button data-filter="루어" type="button">루어</button>
-          <button data-filter="민물" type="button">민물</button>
-          <button data-filter="초보" type="button">초보</button>
+
+        <div class="cart-bottom-buttons">
+            <button class="buy-btn" type="button" onclick="buy()">구매하기</button>
+            <button class="back-btn" type="button" onclick="closeCart()">계속 보기</button>
         </div>
-        <div class="rig-grid">
-          <article class="rig-card" data-tags="바다 초보">
-            <img src="./assets/rig-float.svg" alt="감성돔 반유동 찌낚시 채비도" />
-            <div>
-              <span class="badge">바다 · 초보</span>
-              <h3>감성돔 반유동 찌낚시</h3>
-              <p>조류를 타고 미끼를 자연스럽게 흘리는 대표 방파제·갯바위 채비입니다.</p>
-              <ul>
-                <li>원줄 2.5~3호, 목줄 1.5~2호</li>
-                <li>구멍찌 B~1호, 수중찌, 쿠션고무</li>
-                <li>만조 전후 조류가 살아날 때 집중</li>
-              </ul>
+    </div>
+</aside>
+
+<div id="product-modal">
+    <div class="modal-box">
+        <button class="modal-close" type="button" onclick="closeProductModal()">×</button>
+
+        <div class="modal-gallery">
+            <button class="slide-btn prev" type="button" onclick="changeSlide(-1)">‹</button>
+            <img id="modal-image" src="" alt="">
+            <button class="slide-btn next" type="button" onclick="changeSlide(1)">›</button>
+            <div id="modal-thumbs"></div>
+        </div>
+
+        <div class="modal-info">
+            <p class="eyebrow">SEOUL ICE SELECT</p>
+            <h2 id="modal-name"></h2>
+            <p id="modal-price"></p>
+
+            <div class="detail-list">
+                <div>
+                    <span>Material</span>
+                    <strong id="modal-material"></strong>
+                </div>
             </div>
-          </article>
-          <article class="rig-card" data-tags="바다 루어">
-            <img src="./assets/rig-downshot.svg" alt="광어 다운샷 루어 채비도" />
-            <div>
-              <span class="badge">루어 · 바다</span>
-              <h3>광어 다운샷 워킹 채비</h3>
-              <p>바닥을 읽으며 넓게 탐색하기 좋은 루어 채비입니다. 모래와 자갈 지형에 강합니다.</p>
-              <ul>
-                <li>합사 0.8~1.2호, 쇼크리더 3~4호</li>
-                <li>다운샷 싱커 14~28g, 3~4인치 웜</li>
-                <li>바닥 찍고 2~3회 액션 후 스테이</li>
-              </ul>
-            </div>
-          </article>
-          <article class="rig-card" data-tags="민물 초보">
-            <img src="./assets/rig-freshwater.svg" alt="붕어 원투 채비도" />
-            <div>
-              <span class="badge">민물 · 초보</span>
-              <h3>붕어 원투 기본 채비</h3>
-              <p>저수지, 수로, 강계에서 안정적으로 운용할 수 있는 입문형 민물 채비입니다.</p>
-              <ul>
-                <li>원투대 2.7~3.6m, 묶음추 10~20호</li>
-                <li>떡밥, 지렁이, 옥수수 미끼 운용</li>
-                <li>밤낚시는 랜턴과 안전 장비 필수</li>
-              </ul>
-            </div>
-          </article>
-        </div>
-      </section>
 
-      <section class="section spot-section" id="spots">
-        <div class="section-head">
-          <p class="eyebrow">Point Finder</p>
-          <h2>지도 연결 포인트 추천</h2>
-          <p>네이버 지도와 구글 지도 검색으로 바로 연결됩니다. 실제 서비스에서는 지도 API 마커로 확장할 수 있습니다.</p>
-        </div>
-        <div class="spot-layout">
-          <aside class="map-board">
-            <img src="./assets/korea-map.svg" alt="전국 낚시 포인트 지도" />
-            <div class="map-note">
-              <strong>추천 장소 큐레이션</strong>
-              <p>접근성, 대상어, 시즌, 안전 편의시설을 기준으로 포인트를 분류합니다.</p>
-            </div>
-          </aside>
-          <div class="spot-list">
-            <article class="spot-card">
-              <div class="spot-title"><span>서해 · 방파제</span><h3>태안 안면도 방포항</h3></div>
-              <p>생활낚시와 가족 출조에 좋은 포인트. 만조 전후 우럭, 노래미, 광어 탐색에 적합합니다.</p>
-              <dl><div><dt>추천 시간</dt><dd>만조 전 1시간~후 2시간</dd></div><div><dt>대상어</dt><dd>우럭·노래미·광어</dd></div><div><dt>편의</dt><dd>주차·편의시설</dd></div></dl>
-              <div class="map-links">
-                <a href="https://map.naver.com/p/search/%ED%83%9C%EC%95%88%20%EB%B0%A9%ED%8F%AC%ED%95%AD" target="_blank" rel="noopener">네이버 지도</a>
-                <a href="https://www.google.com/maps/search/?api=1&query=%ED%83%9C%EC%95%88%20%EB%B0%A9%ED%8F%AC%ED%95%AD" target="_blank" rel="noopener">구글 지도</a>
-              </div>
-            </article>
-            <article class="spot-card">
-              <div class="spot-title"><span>수도권 · 워킹 루어</span><h3>한강 반포대교 주변</h3></div>
-              <p>퇴근 후 짧게 다녀오기 좋은 도심 포인트. 해질녘 베이트피시 움직임을 확인하세요.</p>
-              <dl><div><dt>추천 시간</dt><dd>해질녘~야간 초반</dd></div><div><dt>대상어</dt><dd>배스·강준치·누치</dd></div><div><dt>편의</dt><dd>대중교통 우수</dd></div></dl>
-              <div class="map-links">
-                <a href="https://map.naver.com/p/search/%ED%95%9C%EA%B0%95%20%EB%B0%98%ED%8F%AC%EB%8C%80%EA%B5%90" target="_blank" rel="noopener">네이버 지도</a>
-                <a href="https://www.google.com/maps/search/?api=1&query=%ED%95%9C%EA%B0%95%20%EB%B0%98%ED%8F%AC%EB%8C%80%EA%B5%90" target="_blank" rel="noopener">구글 지도</a>
-              </div>
-            </article>
-            <article class="spot-card">
-              <div class="spot-title"><span>남해 · 선상</span><h3>통영 삼덕항</h3></div>
-              <p>한치, 참돔, 볼락 선상낚시 출항지. 예약 전 기상과 장비 대여 여부를 확인하세요.</p>
-              <dl><div><dt>추천 시간</dt><dd>출항 일정 기준</dd></div><div><dt>대상어</dt><dd>한치·참돔·볼락</dd></div><div><dt>편의</dt><dd>선사 다수</dd></div></dl>
-              <div class="map-links">
-                <a href="https://map.naver.com/p/search/%ED%86%B5%EC%98%81%20%EC%82%BC%EB%8D%95%ED%95%AD" target="_blank" rel="noopener">네이버 지도</a>
-                <a href="https://www.google.com/maps/search/?api=1&query=%ED%86%B5%EC%98%81%20%EC%82%BC%EB%8D%95%ED%95%AD" target="_blank" rel="noopener">구글 지도</a>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
+            <div id="modal-options" class="modal-options"></div>
 
-      <section class="section split-section" id="booking">
-        <div class="section-head">
-          <p class="eyebrow">Boat Booking</p>
-          <h2>선상낚시 예약</h2>
-          <p>예약 기능은 프론트 화면 샘플입니다. 실제 운영 시 예약 API나 카카오 알림톡을 연결하면 됩니다.</p>
+            <button id="modal-add-btn" type="button">장바구니 담기</button>
         </div>
-        <div class="booking-grid">
-          <article class="booking-card"><span>통영 삼덕호</span><h3>한치 야간 선상</h3><p>출항 18:30 · 잔여 5석 · 장비 대여 가능</p><strong>85,000원</strong><button type="button" data-book="통영 삼덕호 한치 야간 선상">예약 문의</button></article>
-          <article class="booking-card"><span>태안 블루피싱</span><h3>우럭·광어 종일반</h3><p>출항 06:00 · 잔여 3석 · 초보 동승 가능</p><strong>110,000원</strong><button type="button" data-book="태안 블루피싱 우럭 광어 종일반">예약 문의</button></article>
-          <article class="booking-card"><span>여수 레드썬</span><h3>참돔 타이라바</h3><p>출항 05:30 · 잔여 2석 · 중급자 추천</p><strong>130,000원</strong><button type="button" data-book="여수 레드썬 참돔 타이라바">예약 문의</button></article>
-        </div>
-      </section>
+    </div>
+</div>
 
-      <section class="section" id="reports">
-        <div class="section-head">
-          <p class="eyebrow">Catch Reports</p>
-          <h2>조황정보 · 낚시 조황</h2>
-          <p>지역, 대상어, 채비를 함께 보여줘서 검색 유입과 체류 시간을 늘릴 수 있는 영역입니다.</p>
-        </div>
-        <div class="report-grid">
-          <article><span>오늘 06:20</span><h3>태안권 방파제 우럭 조황</h3><p>지그헤드 7g, 3인치 웜에 반응. 만조 직후 입질 집중.</p></article>
-          <article><span>어제 21:40</span><h3>통영 한치 야간 선상</h3><p>집어등 켠 뒤 40분부터 꾸준한 입질. 에기 2.5호 추천.</p></article>
-          <article><span>이번 주</span><h3>한강 워킹 루어</h3><p>해질녘 강준치 피딩 확인. 소형 메탈과 미노우 반응.</p></article>
-          <article><span>주말 예보</span><h3>서해 남서풍 체크</h3><p>바람 강한 날은 내항권과 방파제 안쪽 포인트 우선 추천.</p></article>
-        </div>
-      </section>
+<div id="backdrop" onclick="closeCart(); closeProductModal();"></div>
 
-      <section class="section events-section" id="events">
-        <div class="section-head">
-          <p class="eyebrow">Events</p>
-          <h2>이벤트 · 제휴 프로모션</h2>
-        </div>
-        <div class="event-grid">
-          <article><strong>초보 출조 패키지</strong><p>장비 대여 + 채비 세트 + 선상 예약 상담</p><a href="#contact">참여 문의</a></article>
-          <article><strong>월간 조황 인증</strong><p>조황 사진 등록 시 낚시용품 쿠폰 증정</p><a href="#contact">이벤트 문의</a></article>
-          <article><strong>광고주 프로모션</strong><p>지역 선사, 낚시점, 쇼핑몰 배너 제휴</p><a href="#contact">광고 문의</a></article>
-        </div>
-      </section>
-
-      <section class="contact-section" id="contact">
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2>문의 · 광고 · 제휴</h2>
-          <p>선상 예약, 포인트 제보, 조황 제보, 광고 문의를 받을 수 있는 폼입니다.</p>
-        </div>
-        <form class="contact-form">
-          <label>문의 유형<select><option>선상낚시 예약</option><option>조황 제보</option><option>광고 문의</option><option>이벤트 제휴</option></select></label>
-          <label>이름<input type="text" placeholder="홍길동" /></label>
-          <label>연락처<input type="tel" placeholder="010-0000-0000" /></label>
-          <label>내용<textarea rows="4" placeholder="원하는 출조 날짜, 지역, 인원 또는 문의 내용을 적어주세요."></textarea></label>
-          <button type="button">문의 보내기</button>
-        </form>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div><strong>피싱웨이브</strong><p>하루 100만 접속자를 목표로 확장 가능한 낚시 정보 플랫폼.</p></div>
-      <div><a href="#top">맨 위로</a><a href="#spots">포인트</a><a href="#contact">문의</a></div>
-    </footer>
-
-    <script src="./script.js"></script>
-  </body>
+<script src="js/app.js"></script>
+</body>
 </html>
