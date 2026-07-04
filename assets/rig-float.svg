@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-label="감성돔 반유동 찌낚시 채비도">
+  <rect width="900" height="620" fill="#e8f6f3"/>
+  <path d="M0 430C200 360 340 470 520 410c140-47 240-15 380 38v172H0Z" fill="#ccefeb"/>
+  <line x1="120" y1="95" x2="780" y2="452" stroke="#0d1b22" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="244" cy="162" r="11" fill="#f0ad58"/><text x="260" y="153" font-family="Segoe UI" font-size="22" font-weight="700" fill="#063f46">반유동 매듭</text>
+  <g transform="translate(405 260) rotate(28)"><ellipse cx="0" cy="0" rx="34" ry="72" fill="#e96f4f"/><ellipse cx="0" cy="-26" rx="20" ry="22" fill="#fff"/><line x1="0" y1="-82" x2="0" y2="82" stroke="#0d1b22" stroke-width="4"/></g>
+  <text x="420" y="220" font-family="Segoe UI" font-size="24" font-weight="800" fill="#063f46">구멍찌</text>
+  <circle cx="575" cy="337" r="26" fill="#087b83"/><text x="596" y="330" font-family="Segoe UI" font-size="22" font-weight="700" fill="#063f46">수중찌</text>
+  <path d="M694 408c48 26 52 70 10 92-24 12-52-8-30-29" fill="none" stroke="#0d1b22" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="668" cy="390" r="8" fill="#e96f4f"/><text x="690" y="404" font-family="Segoe UI" font-size="22" font-weight="700" fill="#063f46">바늘·크릴</text>
+  <text x="42" y="58" font-family="Segoe UI" font-size="34" font-weight="900" fill="#0d1b22">감성돔 반유동 찌낚시</text>
+</svg>

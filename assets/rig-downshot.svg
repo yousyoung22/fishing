@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-label="광어 다운샷 루어 채비도">
+  <rect width="900" height="620" fill="#eef8f6"/>
+  <path d="M0 482h900v138H0Z" fill="#d7c9aa"/><path d="M80 505c95 22 150-18 260 0s180 40 330 3c72-18 132-8 190 16" fill="none" stroke="#b99f72" stroke-width="10" stroke-linecap="round"/>
+  <line x1="120" y1="165" x2="780" y2="420" stroke="#0d1b22" stroke-width="8" stroke-linecap="round"/>
+  <line x1="494" y1="310" x2="494" y2="495" stroke="#0d1b22" stroke-width="5"/>
+  <ellipse cx="494" cy="520" rx="24" ry="38" fill="#5f6f73"/><text x="525" y="516" font-family="Segoe UI" font-size="22" font-weight="800" fill="#063f46">싱커 14~28g</text>
+  <path d="M355 254c70-36 157-20 226 36-70 54-158 58-226 17Z" fill="#087b83"/>
+  <circle cx="395" cy="274" r="10" fill="#fff"/><path d="M572 288c38 24 43 56 13 76" fill="none" stroke="#0d1b22" stroke-width="8" stroke-linecap="round"/>
+  <text x="360" y="220" font-family="Segoe UI" font-size="24" font-weight="900" fill="#063f46">웜 + 오프셋 훅</text>
+  <text x="42" y="58" font-family="Segoe UI" font-size="34" font-weight="900" fill="#0d1b22">광어 다운샷 워킹 채비</text>
+</svg>

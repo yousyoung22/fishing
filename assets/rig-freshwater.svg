@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-label="붕어 원투 기본 채비도">
+  <rect width="900" height="620" fill="#edf7f4"/>
+  <path d="M0 370c150-42 274 10 432-28 196-46 280-9 468 38v240H0Z" fill="#ccefeb"/>
+  <line x1="120" y1="128" x2="760" y2="430" stroke="#0d1b22" stroke-width="8" stroke-linecap="round"/>
+  <rect x="350" y="272" width="150" height="54" rx="14" fill="#f0ad58"/><text x="354" y="252" font-family="Segoe UI" font-size="24" font-weight="900" fill="#063f46">떡밥·미끼</text>
+  <ellipse cx="570" cy="360" rx="36" ry="46" fill="#087b83"/><text x="612" y="368" font-family="Segoe UI" font-size="22" font-weight="800" fill="#063f46">묶음추</text>
+  <path d="M694 414c38 26 40 64 8 86-22 15-54 0-34-27" fill="none" stroke="#0d1b22" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="658" cy="395" r="9" fill="#e96f4f"/>
+  <text x="42" y="58" font-family="Segoe UI" font-size="34" font-weight="900" fill="#0d1b22">붕어 원투 기본 채비</text>
+  <text x="42" y="100" font-family="Segoe UI" font-size="22" fill="#64747c">저수지 · 수로 · 강계 입문용</text>
+</svg>

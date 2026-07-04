@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 980" role="img" aria-label="프리미엄 낚시 포인트 지도">
+  <defs>
+    <linearGradient id="sea" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ccefeb"/>
+      <stop offset=".55" stop-color="#087b83"/>
+      <stop offset="1" stop-color="#063f46"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="20" flood-color="#0d1b22" flood-opacity=".18"/>
+    </filter>
+  </defs>
+  <rect width="1400" height="980" rx="42" fill="url(#sea)"/>
+  <path d="M-90 230C95 88 335 92 478 220c136 122 86 305-63 377C229 686 40 606-70 470Z" fill="#f8fbf8" opacity=".96"/>
+  <path d="M846 132c228-32 488 84 564 278 92 234-116 466-346 438-186-23-280-168-252-326 16-92 88-170 34-390Z" fill="#f8fbf8" opacity=".96"/>
+  <path d="M245 705c159-88 332-69 432 36 66 70 65 157-15 197H233c-73-63-69-170 12-233Z" fill="#e4f3ef" opacity=".9"/>
+  <path d="M150 420C370 300 520 487 720 390c155-75 257-20 382 88" fill="none" stroke="#fff" stroke-width="18" stroke-linecap="round" opacity=".9"/>
+  <path d="M150 420C370 300 520 487 720 390c155-75 257-20 382 88" fill="none" stroke="#f0ad58" stroke-width="6" stroke-linecap="round"/>
+  <g filter="url(#shadow)">
+    <g transform="translate(330 332)"><path d="M0-52c31 0 56 25 56 56 0 42-56 96-56 96S-56 46-56 4c0-31 25-56 56-56Z" fill="#e96f4f"/><circle r="18" fill="#fff"/></g>
+    <g transform="translate(690 426)"><path d="M0-52c31 0 56 25 56 56 0 42-56 96-56 96S-56 46-56 4c0-31 25-56 56-56Z" fill="#e96f4f"/><circle r="18" fill="#fff"/></g>
+    <g transform="translate(1060 522)"><path d="M0-52c31 0 56 25 56 56 0 42-56 96-56 96S-56 46-56 4c0-31 25-56 56-56Z" fill="#e96f4f"/><circle r="18" fill="#fff"/></g>
+  </g>
+  <g transform="translate(910 730)">
+    <path d="M0 38h250c-18 58-73 92-153 92C53 130 16 96 0 38Z" fill="#0d1b22"/>
+    <path d="M95 34V-126" stroke="#0d1b22" stroke-width="9" stroke-linecap="round"/>
+    <path d="M110-106v130h148Z" fill="#f0ad58"/>
+    <path d="M95-70C40-24 8 26-12 78" fill="none" stroke="#fff" stroke-width="4" opacity=".8"/>
+  </g>
+  <text x="74" y="820" font-family="Segoe UI, Arial" font-size="50" font-weight="800" fill="#063f46">Fishing Point Map</text>
+  <text x="78" y="874" font-family="Segoe UI, Arial" font-size="24" fill="#42666b">spots · tide · boat booking · catch report</text>
+</svg>
